@@ -1,0 +1,15 @@
+<h1>List of Dinosaurs</h1>
+
+<form action="/dinosaurs" method="GET">
+    <label for="nameFilter">Filter by Name:</label>
+    <input type="text" id="nameFilter" name="nameFilter">
+    <input type="submit">
+</form>
+
+<ul>
+
+
+    <% for (var dino of dinosaurs){ %> 
+        <li><%- dino.name %> is a <%- dino.type%></li>
+    <% } %> 
+</ul>
